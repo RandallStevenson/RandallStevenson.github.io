@@ -8,9 +8,21 @@
     <body>
         <h1>Comparisons</h1>
         <br>
-        <br>
         <h2>Temperature Analysis</h2><br>
-        
+        <h3>Statistical Method #1</h3><br>
+        We will test to see if there is a signficant difference in the temperatures within and beyond 45 degrees latitude from the equator.
+        <br><strong>Hypothesis:</strong> The temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees latitude of the equator.  μ 45+ is less than μ 45-
+            <strong>Null Hypothesis:</strong> Temperature more than 45 degrees latitude from the equator is greater than or equal to the temperature within 45 degrees latitude of the equator. μ 45+ ≥ μ 45-
+            <strong>Significance Level:</strong> 1%.  
+            <strong>Test Method:</strong> On-tailed, two-sample t-test
+            <strong>Statistical Analysis:</strong>
+            S45+ = 20.10	n45+ = 159	ẋ45+ = 17.565
+            S45- = 15.44	n45- = 406	ẋ45- = 67.953
+            SE (standard error) = √{[( S245+ (n45+-1) + S245- (n45--1))/( n45+ + n45- -2)][1/ n45+  + 1/ n45+]}= 1.579
+            DF (degrees of freedom) = ( S245+/ n45+ + S245-/ n45-)2/{[( S245+/ n45+ )2/(n45+-1)]+ [( S245-/ n45- )2/(n45--1)]} = 235
+        <strong>Test Statistic:</strong> t = (ẋ45+ - ẋ45-)/SE = -31.91
+        <strong>>P-value:</strong> The p-value is less than 0.00001. 
+        <strong>Interpretation:</strong> Reject the null hypothesis. Based on the data provided there is a greater than 99.999% chance that the temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees of the equator.
         <br>
         <h2>Humidity Analysis</h2><br>
         
