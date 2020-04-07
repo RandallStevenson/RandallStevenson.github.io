@@ -37,9 +37,9 @@
 <strong>Test Method:</strong> Fisher’s F-test <br>
 <strong>Statistical Analysis:</strong>  Let y = -44.7+125.3×cos(lat)<br>
 	SSE<sub>x</sub> (sum of squares of errors for constant assumption) =896866.5<br>
-	SSE<sub>y</sub> (sum of squares of errors for ys) = 90346.93<br>
-	DF = 563 (use 120 in the F-table, for conservatism) There are 2 parameters selected the intercept and multiplier (slope), so DF=n-2<br><br>
-    <strong>Test Statistic:</strong> F=(SSE<sub>x</sub> – SSE<sub>y</sub>)/( SSE<sub>y</sub>/564) = 5034.7<br><br>
+	SSE<sub>y</sub> (sum of squares of errors for ys) = 90346.9<br>
+	DF = 563 (use 120 in the F-table, for a conservative answer) There are 2 parameters selected, the intercept and multiplier (slope); so, DF=n-2.<br><br>
+    <strong>Test Statistic:</strong> F=(SSE<sub>x</sub> – SSE<sub>y</sub>)/( SSE<sub>y</sub>/563) = 5025.9<br><br>
     <strong>Interpretation:</strong> To pass the F-test at a 1% significance, F must be greater than 1.533,<br>
     which it does. Therefore, we are at least 99% certain the model -44.7 + 125.3 x cos(latitude) for temperature<br>
     is more accurate than assuming the temperature is 53.8 regardless of latitude. <br><br>
@@ -65,8 +65,8 @@
             <tr><td>>45 deg</td><td>10.25</td><td>168</td><td>7.17</td></tr>
             <tr><td><=45 deg</td><td>8.03</td><td>396</td><td>5.31</td></tr>
         </table>
-        <br>SE (standard error) = √{[( S<sub>45+</sub><sup>2</sup> (n<sub>45+</sub>+-1) + S<sub>45-</sub><sup>2</sup> (n<sub>45-</sub>-1))/( n<sub>45+</sub> + n<sub>45-</sub> -2)][1/ n<sub>45+</sub>  + 1/ n<sub>45-</sub>]}= 0.614
-        <br>DF (degrees of freedom) = ( S<sub>45+</sub><sup>2</sup>/ n<sub>45+</sub>+ + S<sub>45-</sub><sup>2</sup>/ n45-)2/{[( S<sub>45+</sub>/ n<sub>45+</sub> )2/(n<sub>45+</sub>-1)]+ [( S<sub>45-</sub>/ n<sub>45-</sub> )2/(n<sub>45-</sub>-1)]} = 248
+        <br>SE (standard error) = √<overline>{[( S<sub>45<sup>+</sup></sub><sup>2</sup> (n<sub>45<sup>+</sup></sub>+-1) + S<sub>45<sup>-</sup></sub><sup>2</sup> (n<sub>45<sup>-</sup></sub> - 1))/( n<sub>45<sup>+</sup></sub> + n<sub>45<sup>-</sup></sub> - 2)][1/n<sub>45<sup>+</sup></sub> + 1/n<sub>45<sup>-</sup></sub>]}</overline>= 0.614
+        <br>DF (degrees of freedom) = ( S<sub>45<sup>+</sup></sub><sup>2</sup>/ n<sub>45<sup>+</sup></sub>+ + S<sub>45<sup>-</sup></sub><sup>2</sup>/ n<sub>45<sup>-</sup></sub>)2/{[( S<sub>45<sup>+</sup></sub>/ n<sub>45<sup>+</sup></sub> )2/(n<sub>45<sup>+</sup></sub> - 1)]+ [(S<sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub> )2/(n<sub>45<sup>-</sup></sub> - 1)]} = 248
         <br><br><strong>Test Statistic:</strong> t = (ẋ<sub>45+</sub> - ẋ<sub>45-</sub>)/SE = 3.605
         <br><strong>P-value:</strong> The p=0.000189. 
         <br><br><strong>Interpretation:</strong> Reject the null hypothesis. Based on the data provided there is a greater than 99.981% chance that the temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees of the equator.
