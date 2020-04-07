@@ -8,6 +8,7 @@
     <h1>Latitude and Temperature</h1>
     <br>
     <br>
+    /* source for dropdown button code is w3schools.com */
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Links</button>
         <div id="myDropdown" class="dropdown-content">
@@ -21,7 +22,34 @@
           <a href="/../../../../peace.html">Peace</a><br>
         </div>
       </div>
-    
+    .dropbtn {
+        background-color: purple;
+        color: gold;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: red;
+        min width: 160px;
+        box-shadow: 0px 8px 16px 0 px rgba(0,0,0,0.2);
+        z-index:1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text decoration: none;
+        display: block;
+    }
+    .show {display:block;}
+
     <h2>Situation</h2><br>
     Does temperature decrease on earth as one moves further away from the equator?<br>
     Although the question may invoke a 'duh' response, how can it be proven?<br>
