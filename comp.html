@@ -22,7 +22,7 @@
             <tr><td>>45 deg</td><td>21.51</td><td>189</td><td>19.69</td></tr>
             <tr><td><=45 deg</td><td>15.53</td><td>397</td><td>68.20</td></tr>
         </table>
-        <br>SE (standard error) = √{[( S<sup>2</sup><sub>45<sup>+</sup></sub>(n<sub>45<sup>+</sup></sub> <strong>-</strong> 1)+S<sup>2</sup><sub>45<sup>-</sup></sub>(n<sub>45<sup>-</sup></sub> <strong>-</strong> 1))/( n<sub>45<sup>+</sup></sub> <strong>+</strong> n<sub>45<sup>-</sup></sub> <strong>-</strong> 2)][1/n<sub>45<sup>+</sup></sub> <strong>+</strong> 1/n<sub>45<sup>-</sup></sub>]} = 1.833
+        <br>SE (standard error) = √{[( S<sup>2</sup><sub>45<sup>+</sup></sub>(n<sub>45<sup>+</sup></sub> <strong>-</strong> 1)+S<sup>2</sup><sub>45<sup>-</sup></sub>(n<sub>45<sup>-</sup></sub> <strong>-</strong> 1))/( n<sub>45<sup>+</sup></sub> <strong>+</strong> n<sub>45<sup>-</sup></sub> <strong>-</strong> 2)] × [1/n<sub>45<sup>+</sup></sub> <strong>+</strong> 1/n<sub>45<sup>-</sup></sub>]} = 1.833
         <br>DF (degrees of freedom) = ( S<sup>2</sup><sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub> <strong>+</strong> S<sup>2</sup><sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/{[(S<sup>2</sup><sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub>)<sup>2</sup>/(n<sub>45<sup>+</sup></sub> <strong>-</strong> 1)] + [(S<sup>2</sup><sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/(n<sub>45<sup>-</sup></sub> <strong>-</strong> 1)]} = 244
         <br><br><strong>Test Statistic:</strong> t = (ẋ<sub>45<sup>+</sup></sub> <strong>-</strong> ẋ<sub>45<sup>-</sup></sub>)/SE = -26.46
         <br><strong>P-value:</strong> The p-value is less than 0.00001. 
@@ -41,7 +41,7 @@
 	DF = 563 (use 120 in the F-table, for a conservative answer) There are 2 parameters selected, the intercept and multiplier (slope); so, DF=n-2.<br><br>
     <strong>Test Statistic:</strong> F=(SSE<sub>x</sub> – SSE<sub>y</sub>)/( SSE<sub>y</sub>/563) = 5025.9<br><br>
     <strong>Interpretation:</strong> To pass the F-test at a 1% significance, F must be greater than 1.533,<br>
-    which it does. Therefore, we are at least 99% certain the model -44.7 + 125.3 x cos(latitude) for temperature<br>
+    which it does. Therefore, we are at least 99% certain the model -44.7 + 125.3 × cos(latitude) for temperature<br>
     is more accurate than assuming the temperature is 53.8 regardless of latitude. <br><br>
     [Note: By further F-tests, a linear regression to the absolute value of the latitude also passes the F-test at 99% certainty,<br>
     but the cosine model is at least 99% likely to be a better model than the linear regression model.]<br>
