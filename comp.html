@@ -22,9 +22,9 @@
             <tr><td>>45 deg</td><td>21.51</td><td>189</td><td>19.69</td></tr>
             <tr><td><=45 deg</td><td>15.53</td><td>397</td><td>68.20</td></tr>
         </table>
-        <br>SE (standard error) = √{[( S45+^2 (n45+-1) + S45-^2 (n45--1))/( n45+ + n45- -2)][1/ n45+  + 1/ n45+]}= 1.833
-        <br>DF (degrees of freedom) = ( S45+^2/ n45+ + S45-^2/ n45-)2/{[( S45+^2/ n45+ )^2/(n45+-1)]+ [( S45-^2/ n45- )^2/(n45--1)]} = 244
-        <br><br><strong>Test Statistic:</strong> t = (ẋ45+ - ẋ45-)/SE = -26.46
+        <br>SE (standard error) = √{[( S<sub>45+</sub><sup>2</sup> (n<sub>45+</sub>-1) + S<sub>45-</sub><sup>2</sup> (n<sub>45-</sub>-1))/( n<sub>45+</sub> + n<sub>45-</sub> -2)][1/ n<sub>45+</sub>  + 1/ n<sub>45-</sub>]}= 1.833
+        <br>DF (degrees of freedom) = ( S<sub>45+</sub><sup>2</sup>/ n<sub>45+</sub> + S<sub>45-</sub><sup>2</sup>/ n<sub>45-</sub>)<sup>2</sup>/{[( S<sub>45+</sub><sup>2</sup>/ n<sub>45+</sub>)<sup>2</sup>/(n<sub>45+</sub>-1)]+ [( S<sub>45-</sub><sup>2</sup>/ n<sub>45-</sub>)<sup>2</sup>/(n<sub>45-</sub>-1)]} = 244
+        <br><br><strong>Test Statistic:</strong> t = (ẋ<sub>45+</sub> - ẋ<sub>45-</sub>)/SE = -26.46
         <br><strong>P-value:</strong> The p-value is less than 0.00001. 
         <br><br><strong>Interpretation:</strong> Reject the null hypothesis. Based on the data provided there is a greater than 99.999% chance that the temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees of the equator.
         <br><br>
@@ -36,10 +36,10 @@
 <strong>Significance level:</strong> 1%<br>
 <strong>Test Method:</strong> Fisher’s F-test <br>
 <strong>Statistical Analysis:</strong>  Let y = -44.7+125.3×cos(lat)<br>
-	SSEx (sum of squares of errors for constant assumption) =896866.5<br>
-	SSEy (sum of squares of errors for ys) = 90346.93<br>
+	SSE<sub>x</sub> (sum of squares of errors for constant assumption) =896866.5<br>
+	SSE<sub>y</sub> (sum of squares of errors for ys) = 90346.93<br>
 	DF = 563 (use 120 in the F-table, for conservatism) There are 2 parameters selected the intercept and multiplier (slope), so DF=n-2<br><br>
-    <strong>Test Statistic:</strong> F=(SSEx – SSEy)/( SSEy/564) = 5034.7<br><br>
+    <strong>Test Statistic:</strong> F=(SSE<sub>x</sub> – SSE<sub>y</sub>)/( SSE<sub>y</sub>/564) = 5034.7<br><br>
     <strong>Interpretation:</strong> To pass the F-test at a 1% significance, F must be greater than 1.533,<br>
     which it does. Therefore, we are at least 99% certain the model -44.7 + 125.3 x cos(latitude) for temperature<br>
     is more accurate than assuming the temperature is 53.8 regardless of latitude. <br><br>
@@ -65,9 +65,9 @@
             <tr><td>>45 deg</td><td>10.25</td><td>168</td><td>7.17</td></tr>
             <tr><td><=45 deg</td><td>8.03</td><td>396</td><td>5.31</td></tr>
         </table>
-        <br>SE (standard error) = √{[( S245+ (n45+-1) + S245- (n45--1))/( n45+ + n45- -2)][1/ n45+  + 1/ n45+]}= 0.614
-        <br>DF (degrees of freedom) = ( S245+/ n45+ + S245-/ n45-)2/{[( S245+/ n45+ )2/(n45+-1)]+ [( S245-/ n45- )2/(n45--1)]} = 248
-        <br><br><strong>Test Statistic:</strong> t = (ẋ45+ - ẋ45-)/SE = 3.605
+        <br>SE (standard error) = √{[( S<sub>45+</sub><sup>2</sup> (n<sub>45+</sub>+-1) + S<sub>45-</sub><sup>2</sup> (n<sub>45-</sub>-1))/( n<sub>45+</sub> + n<sub>45-</sub> -2)][1/ n<sub>45+</sub>  + 1/ n<sub>45-</sub>]}= 0.614
+        <br>DF (degrees of freedom) = ( S<sub>45+</sub><sup>2</sup>/ n<sub>45+</sub>+ + S<sub>45-</sub><sup>2</sup>/ n45-)2/{[( S<sub>45+</sub>/ n<sub>45+</sub> )2/(n<sub>45+</sub>-1)]+ [( S<sub>45-</sub>/ n<sub>45-</sub> )2/(n<sub>45-</sub>-1)]} = 248
+        <br><br><strong>Test Statistic:</strong> t = (ẋ<sub>45+</sub> - ẋ<sub>45-</sub>)/SE = 3.605
         <br><strong>P-value:</strong> The p=0.000189. 
         <br><br><strong>Interpretation:</strong> Reject the null hypothesis. Based on the data provided there is a greater than 99.981% chance that the temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees of the equator.
         <br>
