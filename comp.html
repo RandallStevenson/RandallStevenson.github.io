@@ -9,24 +9,43 @@
         <h1>Comparisons</h1>
         <br>
         <h2>Temperature Analysis</h2><br>
-        <h3>Statistical Method #1</h3><br>
+        <h3>Statistical Method #1</h3><br><br>
         We will test to see if there is a signficant difference in the temperatures within and beyond 45 degrees latitude from the equator.
-        <br><strong>Hypothesis:</strong> The temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees latitude of the equator.  μ 45+ is less than μ 45-
+        <br><br><strong>Hypothesis:</strong> The temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees latitude of the equator.  μ 45+ is less than μ 45-
         <br><strong>Null Hypothesis:</strong> Temperature more than 45 degrees latitude from the equator is greater than or equal to the temperature within 45 degrees latitude of the equator. μ 45+ ≥ μ 45-
         <br><strong>Significance Level:</strong> 1%.  
         <br><strong>Test Method:</strong> One-tailed, two-sample t-test
         <br><strong>Statistical Analysis:</strong>
-        <table>
+        <br>
+            <table>
             <tr><th>Grouping</th><th>Standard Deviation</th><th>Count</th><th>Sample Mean</th></tr>
             <tr><td>>45 deg</td><td>20.10</td><td>159</td><td>17.565</td></tr>
             <tr><td><=45 deg</td><td>15.44</td><td>406</td><td>67.953</td></tr>
         </table>
         <br>SE (standard error) = √{[( S245+ (n45+-1) + S245- (n45--1))/( n45+ + n45- -2)][1/ n45+  + 1/ n45+]}= 1.579
         <br>DF (degrees of freedom) = ( S245+/ n45+ + S245-/ n45-)2/{[( S245+/ n45+ )2/(n45+-1)]+ [( S245-/ n45- )2/(n45--1)]} = 235
-        <br><strong>Test Statistic:</strong> t = (ẋ45+ - ẋ45-)/SE = -31.91
+        <br><br><strong>Test Statistic:</strong> t = (ẋ45+ - ẋ45-)/SE = -31.91
         <br><strong>P-value:</strong> The p-value is less than 0.00001. 
         <br><br><strong>Interpretation:</strong> Reject the null hypothesis. Based on the data provided there is a greater than 99.999% chance that the temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees of the equator.
         <br>
+        <h3>Statistical Method #2</h3><br><br>
+        We will test the fit of temperature as a function of cosine of latitude to temperture being a constant.<br>
+        <br>
+        <strong>Hypothesis:</strong> The temperature is a function of latitude approximated by -44.7+125.3×cos(lat).
+<strong>Alternative Hypothesis:</strong> The temperature is independent of the cosine of the latitude.
+<strong>Significance level:</strong> 1%
+<strong>Test Method:</strong> Fisher’s F-test 
+<strong>Statistical Analysis:</strong>  Let y = -44.7+125.3×cos(lat)<br>
+	SSEx (sum of squares of errors for constant assumption) =896866.5<br>
+	SSEy (sum of squares of errors for ys) = 90346.93<br>
+	DF = 564 (use 120 in the F-table, for conservatism) <br><br>
+    <strong>Test Statistic:</strong> F=(SSEx – SSEy)/( SSEy/564) = 5034.7<br>
+    <strong>Interpretation:</strong> To pass the F-test at a 1% significance, F must be greater than 1.533, which it does. Therefore, we are at least 99% certain the model -44.7 + 125.3 x cos(latitude) for temperature is more accurate than assuming the temperature is 53.8 regardless of latitude. [Note: By further F-tests, a linear regression to the absolute value of the latitude also passes the F-test at 99% certainty,<br>
+    but the cosine model is at least 99% likely to be a better model than the linear regression model.]<br>
+<br>
+<h2>CONCLUSION</h2>
+The temperature on the earth decreases as the distance from the equator increases. The average temperature (°F) at a latitude can be approximated by -44.7 + 125.3  × cos(latitude).
+
         <h2>Humidity Analysis</h2><br>
         
         <br>
