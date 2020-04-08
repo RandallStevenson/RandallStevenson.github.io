@@ -83,8 +83,8 @@
                         <tr><td>> 45 deg</td><td>      21.51</td><td> 189</td><td>   19.69</td></tr>
                         <tr><td><=45 deg</td><td>      15.53</td><td> 397</td><td>   68.20</td></tr>
                     </table>
-                    <br>se (standard error) = √{[( S<sup>2</sup><sub>45<sup>+</sup></sub>(n<sub>45<sup>+</sup></sub> <strong>-</strong> 1)+S<sup>2</sup><sub>45<sup>-</sup></sub>(n<sub>45<sup>-</sup></sub> <strong>-</strong> 1))/( n<sub>45<sup>+</sup></sub> <strong>+</strong> n<sub>45<sup>-</sup></sub> <strong>-</strong> 2)] × [1/n<sub>45<sup>+</sup></sub> <strong>+</strong> 1/n<sub>45<sup>-</sup></sub>]} = 1.833
-                    <br>df (degrees of freedom) = ( S<sup>2</sup><sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub> <strong>+</strong> S<sup>2</sup><sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/{[(S<sup>2</sup><sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub>)<sup>2</sup>/(n<sub>45<sup>+</sup></sub> <strong>-</strong> 1)] + [(S<sup>2</sup><sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/(n<sub>45<sup>-</sup></sub> <strong>-</strong> 1)]} = 244
+                    <br>se (standard error) = √{[(s<sup>2</sup><sub>45<sup>+</sup></sub>(n<sub>45<sup>+</sup></sub><strong> - </strong>1) + s<sup>2</sup><sub>45<sup>-</sup></sub>(n<sub>45<sup>-</sup></sub> <strong>-</strong> 1))/( n<sub>45<sup>+</sup></sub> <strong>+</strong> n<sub>45<sup>-</sup></sub> <strong>-</strong> 2)] × [1/n<sub>45<sup>+</sup></sub> <strong>+</strong> 1/n<sub>45<sup>-</sup></sub>]} = 1.833
+                    <br>df (degrees of freedom) = (s<sup>2</sup><sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub><strong> + </strong>s<sup>2</sup><sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/{[(s<sup>2</sup><sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub>)<sup>2</sup>/(n<sub>45<sup>+</sup></sub> <strong>-</strong> 1)] + [(s<sup>2</sup><sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/(n<sub>45<sup>-</sup></sub> <strong>-</strong> 1)]} = 244
                     <br><br><strong>Test Statistic:</strong> t = (ẋ<sub>45<sup>+</sup></sub> <strong>-</strong> ẋ<sub>45<sup>-</sup></sub>)/se = -26.46
                     <br><strong>P-value:</strong> Pearson's P-value is less than 0.00001. 
                     <br><br><strong>Interpretation:</strong> Reject the null hypothesis. Based on the data provided there is a greater than 99.999% chance that the temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees of the equator.
@@ -99,7 +99,7 @@
                     <strong>Statistical Analysis:</strong>  Let y = -44.7 + 125.3 × cosine(latitiude)<br>
 	                SSE<sub>x</sub> (sum of squares of errors for constant assumption) = 896866.5<br>
 	                SSE<sub>y</sub> (sum of squares of errors for ys) = 90346.9<br>
-	                df = 563 (use 120 in the F-table, for a conservative answer) There are 2 parameters selected, the intercept and multiplier (slope); so, DF=n-2.<br><br>
+	                df = 563 (use 120 in the F-table, for a conservative answer) There are 2 parameters selected, the intercept and multiplier (slope); so, df=n-2.<br><br>
                     <strong>Test Statistic:</strong> F=(SSE<sub>x</sub> – SSE<sub>y</sub>)/( SSE<sub>y</sub>/563) = 5025.9<br><br>
                     <strong>Interpretation:</strong> To pass the F-test at a 1% significance, Fisher's F must be greater than 1.533,<br>
                     which it does. Therefore, we are at least 99% certain the model -44.7 + 125.3 × cos(latitude) for temperature<br>
@@ -124,8 +124,8 @@
                         <tr><td>> 45 deg</td><td>     10.25</td><td>  168</td><td>     7.17</td></tr>
                         <tr><td><=45 deg</td><td>      8.03</td><td>  396</td><td>     5.31</td></tr>
                     </table>
-                    <br>se (standard error) = √{[( S<sup>2</sup><sub>45<sup>+</sup></sub>(n<sub>45<sup>+</sup></sub> - 1) + S<sup>2</sup><sub>45<sup>-</sup></sub>(n<sub>45<sup>-</sup></sub> - 1))/(n<sub>45<sup>+</sup></sub> + n<sub>45<sup>-</sup></sub> - 2)] × [1/n<sub>45<sup>+</sup></sub> + 1/n<sub>45<sup>-</sup></sub>]}= 0.614
-                    <br>df (degrees of freedom) = (S<sup>2</sup><sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub> + S<sup>2</sup><sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/{[( S<sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub>)<sup>2</sup>/(n<sub>45<sup>+</sup></sub> - 1)] + [(S<sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/(n<sub>45<sup>-</sup></sub> - 1)]} = 248
+                    <br>se (standard error) = √{[(s<sup>2</sup><sub>45<sup>+</sup></sub>(n<sub>45<sup>+</sup></sub> - 1) + s<sup>2</sup><sub>45<sup>-</sup></sub>(n<sub>45<sup>-</sup></sub> - 1))/(n<sub>45<sup>+</sup></sub> + n<sub>45<sup>-</sup></sub> - 2)] × [1/n<sub>45<sup>+</sup></sub> + 1/n<sub>45<sup>-</sup></sub>]}= 0.614
+                    <br>df (degrees of freedom) = (s<sup>2</sup><sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub> + s<sup>2</sup><sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/{[(s<sub>45<sup>+</sup></sub>/n<sub>45<sup>+</sup></sub>)<sup>2</sup>/(n<sub>45<sup>+</sup></sub> - 1)] + [(s<sub>45<sup>-</sup></sub>/n<sub>45<sup>-</sup></sub>)<sup>2</sup>/(n<sub>45<sup>-</sup></sub> - 1)]} = 248
                     <br><br><strong>Test Statistic:</strong> t = (ẋ<sub>45<sup>+</sup></sub> - ẋ<sub>45<sup>-</sup></sub>)/se = 3.605
                     <br><strong>P-value:</strong> Pearson's P=0.000189. 
                     <br><br><strong>Interpretation:</strong> Reject the null hypothesis. Based on the data provided there is a greater than 99.981% chance that the temperature more than 45 degrees latitude from the equator is less than the temperature within 45 degrees of the equator.
